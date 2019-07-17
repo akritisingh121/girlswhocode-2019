@@ -1,11 +1,13 @@
+'''
+Basic hangman
 
+ask player 1 for a secret word
+show player 2 the dashes
 
-#ask player 1 for a secret word
-#show player 2 the dashes
-
-#ask player 2 for a letter
-#figure out if the letter is correct or wrong
-#figure out if the player wins or loses
+ask player 2 for a letter
+figure out if the letter is correct or wrong
+figure out if the player wins or loses
+'''
 
 print("Welcome to Hangman!")
 secret_word = input("Player 1, please enter a secret word \n")

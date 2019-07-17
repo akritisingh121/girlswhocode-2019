@@ -1,11 +1,22 @@
+'''
+Advanced hangman
 
+ask player 1 for a secret word
+show player 2 the dashes
 
-#ask player 1 for a secret word
-#show player 2 the dashes
-
-#ask player 2 for a letter
-#figure out if the letter is correct or wrong
-#figure out if the player wins or loses
+ask player 2 for a guess
+figure out if the player's input is invalid
+	if so, prompt the player to reenter a guess
+figure out if the player has already guessed that input
+	if so, prompt the player to reenter a guess
+figure out if the letter is correct
+	if so, update the dashes 
+figure out if the word is correct
+	if so, end the game
+figure out if the letter is wrong
+	if so, decrement lives
+figure out if the player wins or loses
+'''
 
 play_again = True
 while play_again == True:
