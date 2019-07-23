@@ -24,7 +24,7 @@ def number_4():
 	i = 1
 	while i < 64:
 		i = 1
-		if i == "4":
+		if i == 4:
 			print("yay")
 		else:
 			print("i = ", i)
@@ -43,7 +43,6 @@ def number_6():
 	while i >= 0:
 		print(toppings[i])
 		i = i - 1 #updating i, could write i -= 1
-
 
 
 
@@ -69,7 +68,6 @@ def create_to_do_list():
 		to_do_list.append(task) #keep adding tasks to the list
 		
 		print(to_do_list)
-		break
 
 
 def find_sum(list_of_numbers):
