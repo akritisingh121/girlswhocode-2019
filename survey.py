@@ -12,16 +12,6 @@ def ask_questions():
 
 	return responses
 
-def save_file(filename, dictionary):
-	with open(filename, 'w') as f:
-		json.dump(dictionary, f)
-
-def read_file(filename):
-	if filename:
-		with open(filename, 'r') as f:
-			responses_read = json.load(f)
-		return responses_read
-
 def run_survey():
 	survey = {}
 	while True:
@@ -37,6 +27,15 @@ def run_survey():
 			break
 	return survey
 
+def save_file(filename, dictionary):
+	with open(filename, 'w') as f:
+		json.dump(dictionary, f)
+
+def read_file(filename):
+	if filename:
+		with open(filename, 'r') as f:
+			responses_read = json.load(f)
+		return responses_read
 
 
 survey = run_survey()
