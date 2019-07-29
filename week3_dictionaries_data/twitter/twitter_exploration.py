@@ -1,4 +1,3 @@
-from textblob import TextBlob
 import json
 
 def read_file(filename):
@@ -7,13 +6,19 @@ def read_file(filename):
     return responses_read
 
 filename = "tweets_small.json"
-twitter_data = read_file(filename) #a list of dictionaries
+twitter_data = read_file(filename) #twitter_data is a list of dictionaries
 
-tweet = twitter_data[5] #dictionary
+tweet = twitter_data[5] #tweet is a dictionary
 
-polarityList = []
+for tweet in twitter_data: #iterate through all the tweets in our list of tweets
+	for key, val in tweet.items(): #use this syntax to iterate over the keys and values in a dictionary
+		print(key)
+		print(val)
+		print() #prints an empty line
+	
+
+#for each tweet, this prints the location of the user that
+#posted it
 for tweet in twitter_data:
-	tweetblob = TextBlob(tweet["text"])
-	polarityList.append(tweetblob.polarity)
-
-print(polarityList)
+	if "location" in tweet["user"].keys():
+		print(tweet["user"]["location"])
