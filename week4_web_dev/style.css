@@ -1,11 +1,50 @@
 body {
-  background-color: Aquamarine;
+  background-color: DarkGray;
   font-family: Arial, Helvetica, sans-serif;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-top: 100px;
 }
 
-.zebra {
-  background-color: red;
+.zebra { /* this is a class, you can use it as many times as you want */
+  background-color: CornflowerBlue;
   height: 100px;
-  width: 300px;
+  width: 100%;
   padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.color {
+  color: green;
+  background-color: PowderBlue;
+  padding: 20px;
+}
+
+.small {
+  width: 300px;
+}
+
+p {
+  margin: 0px;
+}
+
+.button {
+  background-color: pink;
+  color: white;
+  padding: 20px;
+  border-radius: 25px;
+  border: 5px outset red;
+  opacity: 0.5;
+}
+
+a {
+  color: green;
+}
+
+a:hover {
+  color: white;
+  transition: 0.5s;
 }
