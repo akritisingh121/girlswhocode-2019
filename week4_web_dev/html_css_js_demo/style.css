@@ -13,6 +13,17 @@ body {
   padding: 20px;
 }
 
+#slideshow {
+  width: 300px;
+  background-color: pink;
+}
+
+.slideshow {
+  width: 300px;
+  margin: auto;
+  height: 250px;
+}
+
 h1 {
   text-align: center;
 }
