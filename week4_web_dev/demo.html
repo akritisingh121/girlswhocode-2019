@@ -1,15 +1,16 @@
-<!––This is a comment––>
 <html>
   <head>
     <title> Demo on HTML </title>
     <link rel="stylesheet" href="style.css">
+    <script src="website_javascript.js"></script>
   </head>
+
   <body>
-    <h1>Hello this is a demo</h1>
+    <h1 onmouseover="change_div_color()" onmouseout="bring_back()">Hello this is a demo</h1>
 
     <hr>
 
-    <div class="color">
+    <div class="color" id="change_color">
       <h2>What is HTML?</h2>
       <p>HTML is a HyperText Markup Language</p>
       <p>HTML is like a backbone, writes up all the info/text for a website</p>
